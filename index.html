@@ -28,69 +28,73 @@
       padding: 2rem;
       border-radius: var(--border-radius);
       box-shadow: var(--shadow);
-      text-align: left; /* 左对齐 */
+      text-align: left;
     }
-    /* .avatar {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 50%;
-      display: block;
-      margin: 0 auto 1rem;
-      border: 3px solid var(--main-color);
-    } */
     h1, h2 {
-      text-align: left; /* 左对齐 */
+      text-align: left;
     }
-    nav {
-      display: flex;
-      flex-direction: column; /* 竖直排列 */
-      gap: 0;
-      margin: 1.5rem 0;
-    }
-    .nav-item {
-      padding: 0.9em 0.2em;
-    }
-    nav a {
-      color: var(--main-color);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.15em;
-      transition: color 0.2s;
-      display: block;
-      width: 100%;
-    }
-    nav a:hover {
-      color: var(--accent-color);
-    }
-    .nav-divider {
-      border: none;
-      border-top: 1px solid #d6d6d6;
-      margin: 0;
-    }
-    .download-block {
+    .download-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2em;
       margin: 2rem 0 1rem 0;
-      text-align: left; /* 左对齐 */
     }
     .download-btn {
-      display: inline-block;
-      padding: 0.7em 1.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1em 0;
       background: var(--main-color);
       color: #fff;
-      border-radius: 6px;
+      border-radius: 8px;
       text-decoration: none;
-      font-size: 1.1em;
+      font-size: 1.07em;
+      font-weight: 500;
       transition: background 0.2s;
+      min-width: 0;
+      min-height: 44px;
+      box-sizing: border-box;
+      text-align: center;
+      border: none;
+      cursor: pointer;
     }
     .download-btn:hover {
       background: var(--accent-color);
+    }
+    .section {
+      margin-top: 2.2em;
+    }
+    .section-title {
+      font-size: 1.18em;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      letter-spacing: 1px;
+      color: var(--main-color);
+    }
+    .section-content {
+      margin-bottom: 1.5em;
+      font-size: 1em;
+      color: #444;
+    }
+    .section-img {
+      max-width: 98%;
+      border-radius: 8px;
+      margin: 0.8em 0;
+      box-shadow: 0 1px 4px rgba(80,80,80,0.08);
+      display: block;
+    }
+    hr.section-divider {
+      border: none;
+      border-top: 1px solid #d6d6d6;
+      margin: 1.2em 0 1.2em 0;
     }
     @media (max-width: 600px) {
       .container {
         padding: 1rem;
       }
-      nav {
-        width: 100%;
+      .download-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8em;
       }
     }
   </style>
@@ -98,28 +102,61 @@
 <body>
   <div class="container">
     <!-- <img src="avatar.png" alt="头像" class="avatar" /> -->
-    <h1>仅适用于本盟</h1>
+    <h1>《三国冰河时代》攻略重点</h1>
     <p style="max-width:500px;">
-      【冠军侯】 | 更新日期：2025/07/18
+      仅根据本盟情况定制，并不适用于所有盟 | 【冠军侯】 | 更新日期：2025/07/18
     </p>
 
-    <nav>
-      <div class="nav-item"><a href="index.html">日常</a></div>
-      <hr class="nav-divider">
-      <div class="nav-item"><a href="about.html">S4同盟角逐</a></div>
-      <hr class="nav-divider">
-      <div class="nav-item"><a href="projects.html">S4最强城主</a></div>
-      <hr class="nav-divider">
-      <div class="nav-item"><a href="contact.html">S4其他活动</a></div>
-    </nav>
-
-    <div class="download-block">
-      <a class="download-btn" href="S4.pdf" download>武将培养</a>
+    <!-- 001 -->
+    <div class="section">
+      <div class="section-title">公告</div>
+      <div class="section-content">
+        啦啦啦
+      </div>
     </div>
+    <hr class="section-divider">
+
+    <!-- 002 -->
+    <div class="download-grid">
+      <a class="download-btn" href="S4_general.pdf" download>S4武将培养</a>
+      <a class="download-btn" href="S4_alliance.html" download>S4同盟角逐</a>
+      <a class="download-btn" href="S4_lord.html" download>S4最强城主</a>
+      <a class="download-btn" href="guandu.html" download>官渡之战</a>
+    </div>
+
+    <div class="section">
+      <div class="section-title">日常</div>
+      <div class="section-content">
+
+        TBD
+      </div>
+
+      <img class="section-img" src="daily01.jpg" alt="tbd">
+    </div>
+    <hr class="section-divider">
+
+    <!-- 003 -->
+    <div class="section">
+      <div class="section-title">其他活动1</div>
+      <div class="section-content">
+
+      </div>
+    </div>
+    <hr class="section-divider">
+
+    <!-- 004 -->
+    <div class="section">
+      <div class="section-title">其他活动1</div>
+      <div class="section-content">
+
+      </div>
+    </div>
+    <hr class="section-divider">
+
   </div>
 
   <footer style="text-align:left; color:#888; margin-top:2rem; font-size:0.95em;">
-    &copy; 2025 古天乐 | <a href="https://gitee.com/malloc007/3B" target="_blank" style="color:var(--main-color);">首页</a>
+    &copy; 2025 古天乐 | <a href="https://malloc7.github.io/3b/" target="_blank" style="color:var(--main-color);">首页</a>
   </footer>
 </body>
 </html>
