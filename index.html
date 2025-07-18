@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>三冰本盟攻略</title>
+  <style>
+    :root {
+      --main-color: #3f51b5;
+      --accent-color: #ff9800;
+      --bg-color: #f5f7fa;
+      --text-color: #222;
+      --card-bg: #fff;
+      --border-radius: 12px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    body {
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 720px;
+      margin: 2rem auto;
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      text-align: left; /* 左对齐 */
+    }
+    /* .avatar {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 1rem;
+      border: 3px solid var(--main-color);
+    } */
+    h1, h2 {
+      text-align: left; /* 左对齐 */
+    }
+    nav {
+      display: flex;
+      flex-direction: column; /* 竖直排列 */
+      gap: 0;
+      margin: 1.5rem 0;
+    }
+    .nav-item {
+      padding: 0.9em 0.2em;
+    }
+    nav a {
+      color: var(--main-color);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.15em;
+      transition: color 0.2s;
+      display: block;
+      width: 100%;
+    }
+    nav a:hover {
+      color: var(--accent-color);
+    }
+    .nav-divider {
+      border: none;
+      border-top: 1px solid #d6d6d6;
+      margin: 0;
+    }
+    .download-block {
+      margin: 2rem 0 1rem 0;
+      text-align: left; /* 左对齐 */
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 0.7em 1.5em;
+      background: var(--main-color);
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: background 0.2s;
+    }
+    .download-btn:hover {
+      background: var(--accent-color);
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 1rem;
+      }
+      nav {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- <img src="avatar.png" alt="头像" class="avatar" /> -->
+    <h1>仅适用于本盟</h1>
+    <p style="max-width:500px;">
+      【冠军侯】 | 更新日期：2025/07/18
+    </p>
+
+    <nav>
+      <div class="nav-item"><a href="index.html">日常</a></div>
+      <hr class="nav-divider">
+      <div class="nav-item"><a href="about.html">S4同盟角逐</a></div>
+      <hr class="nav-divider">
+      <div class="nav-item"><a href="projects.html">S4最强城主</a></div>
+      <hr class="nav-divider">
+      <div class="nav-item"><a href="contact.html">S4其他活动</a></div>
+    </nav>
+
+    <div class="download-block">
+      <a class="download-btn" href="resume.pdf" download>武将培养</a>
+    </div>
+  </div>
+
+  <footer style="text-align:left; color:#888; margin-top:2rem; font-size:0.95em;">
+    &copy; 2025 古天乐 | <a href="https://gitee.com/malloc007/3B" target="_blank" style="color:var(--main-color);">首页</a>
+  </footer>
+</body>
+</html>
