@@ -220,7 +220,14 @@
   </div>
 
   <footer style="text-align:left; color:#888; margin-top:2rem; font-size:0.95em;">
-    &copy; 2025 古天乐 <br><br>
+    &copy; 2025 古天乐 | <span id="counter">0</span> <br><br>
   </footer>
+  <script>
+        // Simple counter logic using localStorage
+        let count = localStorage.getItem('page_counter') || 0;
+        count++;
+        localStorage.setItem('page_counter', count);
+        document.getElementById('counter').textContent = count;
+    </script>
 </body>
 </html>
